@@ -13,23 +13,24 @@ const LogoBox = styled.span`
   padding: 10px;
 
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(-20deg);
   }
 `;
 
 const Logo = () => {
-  const coffeeImg = `/images/coffee${useColorModeValue('', '-dark')}.png`; // Use backticks for string interpolation
-  return (
-    <Link href="/">
-      <a>
-        <LogoBox>
-          <Image src={coffeeImg} width={20} height={20} alt="logo" />
-          <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily='M PLUS Rounded 1c' fontWeight="bold" ml={3}>
-            Michael Sousa
-          </Text>
-        </LogoBox>
-      </a>
-    </Link>
+  const coffeeGif = `/images/coffeeG${useColorModeValue('', '-dark')}.gif`; // Use backticks for string interpolation
+  
+    return (
+    (<Link href="/">
+      
+      <LogoBox>
+        <Image src={coffeeGif} width={20} height={20} alt="logo" />
+        <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily='M PLUS Rounded 1c' fontWeight="bold" ml={3}>
+          Michael Sousa
+        </Text>
+      </LogoBox>
+
+    </Link>)
   );
 };
 
