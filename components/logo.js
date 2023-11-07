@@ -18,13 +18,13 @@ const LogoBox = styled.span`
 `;
 
 const Logo = () => {
-  const coffeeGif = `/images/coffeeG${useColorModeValue('', '-dark')}.gif`; // Use backticks for string interpolation
+  const coffeeImg = `/images/bLcoffee${useColorModeValue('', '-dark')}.png`; 
   
     return (
     (<Link href="/">
       
       <LogoBox>
-        <Image src={coffeeGif} width={20} height={20} alt="logo" />
+        <Image src={coffeeImg} width={20} height={20} alt="logo" />
         <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontFamily='M PLUS Rounded 1c' fontWeight="bold" ml={3}>
           Michael Sousa
         </Text>

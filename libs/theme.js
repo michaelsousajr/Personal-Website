@@ -8,3 +8,49 @@ const styles = {
     }
   })
 }
+
+const components = {
+  Heading: {
+    variants: {
+      'section-title': {
+        TextDecoration: 'underline',
+        fontSize: 20,
+        textUnderlineOffset: 6,
+        TextDecorationColor: '#525252',
+        textDecorationThickness: 4, 
+        marginTop: 3,
+        marginBottom: 4
+      }
+    }
+  },
+  Link: {
+    baseStyle: props => ({
+      color: mode('#3d7aed', '#ff63c3')(props),
+      textUnderlineOffset: 3
+    })
+  }
+}
+
+const colors={
+  glassTeal: '#88ccca'
+}
+
+const fonts = {
+  heading: "'M PLUS Rounded 1c'"
+}
+
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: true
+}
+
+const theme = extendTheme({
+  styles,
+  components,
+  colors, 
+  fonts,
+  config
+})
+
+export default theme
+
