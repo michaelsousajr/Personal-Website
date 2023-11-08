@@ -7,6 +7,7 @@ import styles from '@/styles/Home.module.css'
 import Section from '../components/section.js'
 import Paragraph from '../components/paragraph.js'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio.js'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,27 +29,58 @@ export default function Home() {
         <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/me.jpeg" alt="profile picture"/>
         </Box>
       </Box>
+
     <Section delay={0.1}>
-      <Heading as="h3" variant="section-title" textUnderlineOffset={1}>
-        Work
+      <Heading as="h3" variant="section-title">
+        About Me
       </Heading>
       
       <Paragraph>
         Hi I'm Michael.
+        This is my most recent project.
+        Include the bioyear tags in here? 
         {' '}
         <NextLink href="/works/nolepatrol">
           <Link>Nole Patrol</Link>
         </NextLink>
       .
       </Paragraph>
-    <Box align="center" my={4}>
-      <NextLink href="/works">
-        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-          My Portfolio
-        </Button>
-      </NextLink>
-    </Box>
-    </Section>
+      <Box align="center" my={4}>
+        <NextLink href="/works">
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My Projects 
+          </Button>
+        </NextLink>
+      </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph> 
+          Film, Weightlifting, Yoga, Mechanical Keyboards, and Coffee!
+        </Paragraph>
+      </Section>
+      
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          My Links
+        </Heading>
+        <Paragraph>
+          add links and images here
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Contact Me
+        </Heading>
+        <Paragraph>
+          Fix this or make a component
+        </Paragraph>
+      </Section>
+
     </Container>
   )
 }
