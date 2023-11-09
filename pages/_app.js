@@ -11,8 +11,6 @@ export default function Website({ Component, pageProps, router }) {
       <Layout>
         <Component {...pageProps} key={router.route} />
       </Layout>
-      
     </ChakraProvider>
   )
 }
-
