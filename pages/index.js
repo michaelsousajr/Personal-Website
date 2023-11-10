@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+//import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
@@ -75,7 +75,7 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph>
-          Hi I'm Michael. this is my most recent project. Include Bio year tags in here?
+          Hi I&aposm Michael. this is my most recent project. Include Bio year tags in here?
           {' '}
           <Link as={NextLink} href="/works/nolepatrol" passHref scroll={false}>
             Nole Patrol
