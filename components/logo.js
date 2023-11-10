@@ -26,8 +26,8 @@ const Logo = () => {
       <LogoBox>
         <Image
           src={coffeeicon}
-          width={20}
-          height={20}
+          width={25}
+          height={25}
           alt="coffee"
           style={{ filter: invertColor ? 'invert(1)' : 'none' }}
         />

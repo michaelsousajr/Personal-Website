@@ -24,6 +24,7 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
+    
       <Box
         borderRadius="lg"
         mb={6}
@@ -40,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
            Michael Sousa 
           </Heading>
-          <p>Design | Developer | Digital Craftsman</p>
+          <p>Designer | Developer | Digital Craftsman</p>
         </Box>
         <Box
           flexShrink={0}
@@ -59,7 +60,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/me.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -71,29 +72,14 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About Me
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
+          Hi I'm Michael. this is my most recent project. Include Bio year tags in here?
+          {' '}
+          <Link as={NextLink} href="/works/nolepatrol" passHref scroll={false}>
+            Nole Patrol
           </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -103,98 +89,53 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            My Projects
           </Button>
         </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          About Me
-        </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music, Weightlifting, mechanical-keyboards,  
+          Art, Music, Film, Weightlifting, Yoga, Mechanical-Keyboards, and Coffee! 
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+         My Links 
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/michaelsousajr" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
               >
-                @craftzdog
+                Github 
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/michael-sousa-02376a225/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
               >
-                @inkdrop_app (English)
+                Linkedin  
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
+          </List>
 
 
         <Heading as="h3" variant="section-title">
-          Newsletter
+         Contact Me 
         </Heading>
         <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
+          email my personal email, make component for this?   
         </p>
 
         <Box align="center" my={4}>
@@ -205,7 +146,7 @@ const Home = () => (
             leftIcon={<EmailIcon />}
             colorScheme="teal"
           >
-            Sign up my newsletter here
+           Contact Me 
           </Button>
         </Box>
       </Section>
