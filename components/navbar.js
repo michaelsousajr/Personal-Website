@@ -27,6 +27,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       href={href}
       scroll={false}
       p={2}
+      borderRadius="15px"
       bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
       target={target}
@@ -76,8 +77,8 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Projects
+          <LinkItem href="/portfolio" path={path}>
+            Portfolio
           </LinkItem>
           <LinkItem href="/resume" path={path}>
             Resume
@@ -107,8 +108,11 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/projects">
-                  Projects
+                <MenuItem as={MenuLink} href="/">
+                  About Me
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/portfolio">
+                  Portfolio
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/resume">
                   Resume

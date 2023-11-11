@@ -7,15 +7,18 @@ import {
   Button,
   List,
   ListItem,
+  Icon,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 //import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
+import ContactMe from '../components/contactme'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -24,7 +27,6 @@ const ProfileImage = chakra(Image, {
 const Home = () => (
   <Layout>
     <Container>
-    
       <Box
         borderRadius="lg"
         mb={6}
@@ -33,13 +35,13 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I am a full-stack developer based in Orlando, Fl!
+        Hello, I&apos;m a digital creator based in Orlando, Fl!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-           Michael Sousa 
+            Michael Sousa
           </Heading>
           <p>Designer | Developer | Digital Craftsman</p>
         </Box>
@@ -74,22 +76,16 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About Me
         </Heading>
-        <Paragraph>
-          Hi I&aposm Michael. this is my most recent project. Include Bio year tags in here?
-          {' '}
-          <Link as={NextLink} href="/works/nolepatrol" passHref scroll={false}>
-            Nole Patrol
-          </Link>
-        </Paragraph>
+        <Paragraph>Hi I&apos;m Michael. I make stuff.</Paragraph>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/portfolio"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My Projects
+            My Portfolio
           </Button>
         </Box>
       </Section>
@@ -99,13 +95,14 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music, Film, Weightlifting, Yoga, Mechanical-Keyboards, and Coffee! 
+          Art, Music, Film, Weightlifting, Yoga, Mechanical-Keyboards, and
+          Coffee!
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-         My Links 
+          My Links
         </Heading>
         <List>
           <ListItem>
@@ -113,42 +110,33 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
               >
-                Github 
+                Github
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/michael-sousa-02376a225/" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/michael-sousa-02376a225/"
+              target="_blank"
+            >
               <Button
                 variant="ghost"
                 colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
               >
-                Linkedin  
+                Linkedin
               </Button>
             </Link>
           </ListItem>
-          </List>
-
+        </List>
 
         <Heading as="h3" variant="section-title">
-         Contact Me 
+          Contact Me
         </Heading>
-        <p>
-          email my personal email, make component for this?   
-        </p>
 
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-           Contact Me 
-          </Button>
-        </Box>
+        <ContactMe />
       </Section>
     </Container>
   </Layout>

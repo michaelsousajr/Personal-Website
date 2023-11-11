@@ -1,10 +1,14 @@
 import Head from 'next/head'
 import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
+import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
+const Model = dynamic(() => import('../model'), { ssr: false })
+import Footer from '../footer'
 
 const Main = ({ children }) => {
   const router = useRouter()
+
   return (
     <Box as="main" pb={8}>
       <Head>
@@ -15,7 +19,9 @@ const Main = ({ children }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
+        <Model />
         {children}
+        <Footer />
       </Container>
     </Box>
   )
