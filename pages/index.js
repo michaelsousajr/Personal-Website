@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-//import { BioSection, BioYear } from '../components/bio'
+import { BioYear, BioSection } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
@@ -35,7 +35,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a digital creator based in Orlando, Fl!
+        Hello, I&apos;m a digital creator based in Florida!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -62,7 +62,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/me.jpeg"
+              src="/images/me_pfp.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -76,7 +76,19 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About Me
         </Heading>
-        <Paragraph>Hi I&apos;m Michael. I make stuff.</Paragraph>
+        <Paragraph mb={6}>
+          Hello! I&apos;m Michael Sousa, a passionate creator dedicated to crafting
+          unique digital experiences. My journey into the world of technology
+          began at Florida State University, where I was fascinated by the
+          endless possibilities of coding and design.
+        </Paragraph>
+        <BioSection>
+          <BioYear>2000</BioYear>Born in Miami, FL
+        </BioSection>
+        <BioSection>
+          <BioYear>2024</BioYear>Graduate from Florida State University
+        </BioSection>
+
         <Box align="center" my={4}>
           <Button
             as={NextLink}
@@ -143,4 +155,3 @@ const Home = () => (
 )
 
 export default Home
-//export { getServerSideProps } from '../components/chakra'

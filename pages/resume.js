@@ -13,7 +13,7 @@ import Section from '../components/section'
 
 const Resume = () => {
   return (
-    <Layout>
+    <Layout title="Resume">
       <Container>
         <Heading as="h3" fontSize={20} mb={4} variant="section-title">
           Resume
@@ -21,7 +21,6 @@ const Resume = () => {
         <Section delay={0.1}>
           <Link href="/ms_resume.pdf" isExternal>
             <Button
-              mb={3}
               scroll={false}
               rightIcon={<ViewIcon />}
               colorScheme="teal"
@@ -34,7 +33,6 @@ const Resume = () => {
             as="a"
             href="/ms_resume.pdf"
             download
-            mb={3}
             ml={3}
             scroll={false}
             rightIcon={<DownloadIcon />}

@@ -10,17 +10,24 @@ const Model = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Camera
+    // Set fixed size dimensions
+    const fixedWidth = 600 // 8x ratio
+    const fixedHeight = 300 // 6x ratio
+    const aspectRatio = fixedWidth / fixedHeight
+
+    // Define zoom factor (larger values = more zoomed out)
+    const zoomFactor = 400
+
+    // Camera setup with adjusted zoom
     const camera = new THREE.OrthographicCamera(
-      window.innerWidth / -2,
-      window.innerWidth / 2,
-      window.innerHeight / 2,
-      window.innerHeight / -2,
+      -aspectRatio * zoomFactor,
+      aspectRatio * zoomFactor,
+      1 * zoomFactor,
+      -1 * zoomFactor,
       -50000,
       10000
     )
     camera.position.set(0, 1, 10)
-    camera.quaternion.setFromEuler(new THREE.Euler(0, 0, 0))
 
     // Scene
     const scene = new THREE.Scene()
@@ -35,32 +42,34 @@ const Model = () => {
       }
     )
 
-    // Renderer
+    // Renderer with fixed size
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
-    renderer.setSize(600, 300)
     renderer.setClearColor(0x000000, 0)
+
+    const setRendererSize = () => {
+      const screenWidth = window.innerWidth
+      const width = Math.min(screenWidth, fixedWidth)
+      const height = width / aspectRatio
+      renderer.setSize(width, height)
+    }
+
+    setRendererSize()
     mountRef.current.appendChild(renderer.domElement)
 
     // Orbit Controls
     const controls = new OrbitControls(camera, renderer.domElement)
-    controls.enableDamping = true // an animation loop is required when either damping or auto-rotation are enabled
+    controls.enableDamping = true
     controls.dampingFactor = 0.05
-    controls.screenSpacePanning = false
-    controls.minDistance = 100
-    controls.maxDistance = 500
 
+    // Handle window resize
     const onWindowResize = () => {
-      camera.left = window.innerWidth / -2
-      camera.right = window.innerWidth / 2
-      camera.top = window.innerHeight / 2
-      camera.bottom = window.innerHeight / -2
-      camera.aspect = window.innerWidth / window.innerHeight
+      setRendererSize()
       camera.updateProjectionMatrix()
-      renderer.setSize(600, 300)
     }
 
     window.addEventListener('resize', onWindowResize, false)
 
+    // Animation loop
     const animate = () => {
       requestAnimationFrame(animate)
       scene.rotation.y += 0.003
@@ -71,7 +80,7 @@ const Model = () => {
 
     return () => {
       window.removeEventListener('resize', onWindowResize, false)
-      if (mountRef.current && mountRef.current.contains(renderer.domElement)) {
+      if (mountRef.current.contains(renderer.domElement)) {
         mountRef.current.removeChild(renderer.domElement)
       }
     }

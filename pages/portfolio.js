@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
@@ -9,41 +9,34 @@ const Portfolio = () => {
   return (
     <Layout title="Portfolio">
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4} variant="section-title">
           Code
         </Heading>
 
-        <SimpleGrid column={[1, 1, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="nolepatrol"
+              id="nole-patrol"
               title="Nole Patrol"
               thumbnail={thumbHappyCat}
             >
-              FSU database search engine
+              Data breach search engine for FSU emails(Not Available)
             </WorkGridItem>
           </Section>
-
-          <Divider my={6} />
-
           <Section delay={0.1}>
             <WorkGridItem
-              id="happycat"
+              id="happy-cat"
               title="Happy Cat"
-              href="https://github.com/michaelsousajr/happy-cat"
               thumbnail={thumbHappyCat}
             >
-              Bash script That movtivates you while you code.
+              Bash script that motivates you.
             </WorkGridItem>
           </Section>
-
-          <Divider my={6} />
 
           <Section delay={0.2}>
             <WorkGridItem
-              id="linkpage"
+              id="link-page-app"
               title="Personal Link Page"
-              href="https://michaelsousajr/happycat"
               thumbnail={thumbHappyCat}
             >
               A Link-Tree clone
@@ -56,4 +49,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio
-//export { getServerSideProps } from '../components/chakra'

@@ -34,8 +34,9 @@ const Logo = () => {
         />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily="M PLUS Rounded 1c"
+          fontFamily="'Dawning of a New Day', cursive"
           fontWeight="bold"
+          fontSize="26px"
           ml={3}
         >
           Michael Sousa
