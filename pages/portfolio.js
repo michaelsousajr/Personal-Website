@@ -4,6 +4,7 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 
 import thumbHappyCat from '../public/images/happycat.png'
+import thumbLinkPage from '../public/images/linkpage.png'
 
 const Portfolio = () => {
   return (
@@ -37,7 +38,7 @@ const Portfolio = () => {
             <WorkGridItem
               id="link-page-app"
               title="Personal Link Page"
-              thumbnail={thumbHappyCat}
+              thumbnail={thumbLinkPage}
             >
               A Link-Tree clone
             </WorkGridItem>
