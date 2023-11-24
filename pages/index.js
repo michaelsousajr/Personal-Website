@@ -108,7 +108,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Art, Music, Film, Weightlifting, Yoga, Mechanical-Keyboards, and
-          Coffee!
+          Coffee.
         </Paragraph>
       </Section>
 

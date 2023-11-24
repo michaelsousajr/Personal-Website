@@ -5,6 +5,9 @@ import Layout from '../components/layouts/article'
 
 import thumbHappyCat from '../public/images/happycat.png'
 import thumbLinkPage from '../public/images/linkpage.png'
+import thumbNolePatrol from '../public/images/np.png'
+import thumbFileOperator from '../public/images/fileoperator.png'
+import thumbPyParty from '../public/images/pypv_ss.png'
 
 const Portfolio = () => {
   return (
@@ -18,10 +21,10 @@ const Portfolio = () => {
           <Section>
             <WorkGridItem
               id="nole-patrol"
-              title="Nole Patrol"
-              thumbnail={thumbHappyCat}
+              title="Nole Patrol (Not Available Yet)"
+              thumbnail={thumbNolePatrol}
             >
-              Data breach search engine for FSU emails(Not Available)
+              Data breach search engine for FSU emails
             </WorkGridItem>
           </Section>
           <Section delay={0.1}>
@@ -30,7 +33,7 @@ const Portfolio = () => {
               title="Happy Cat"
               thumbnail={thumbHappyCat}
             >
-              Bash script that motivates you.
+              Bash script that motivates you
             </WorkGridItem>
           </Section>
 
@@ -40,9 +43,30 @@ const Portfolio = () => {
               title="Personal Link Page"
               thumbnail={thumbLinkPage}
             >
-              A Link-Tree clone
+              Link-in-bio app
             </WorkGridItem>
           </Section>
+
+          <Section delay={0.3}>
+            <WorkGridItem
+              id="fileoperator"
+              title="fileoperator"
+              thumbnail={thumbFileOperator}
+            >
+              Python file operations package
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.4}>
+            <WorkGridItem
+              id="PyPartyVisuals"
+              title="PyPartyVisuals"
+              thumbnail={thumbPyParty}
+            >
+              BPM synced party visuals
+            </WorkGridItem>
+          </Section>
+
         </SimpleGrid>
       </Container>
     </Layout>

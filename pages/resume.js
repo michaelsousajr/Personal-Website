@@ -19,7 +19,7 @@ const Resume = () => {
           Resume
         </Heading>
         <Section delay={0.1}>
-          <Link href="/ms_resume.pdf" isExternal>
+          <Link href="/ms_resume.docx.pdf" isExternal>
             <Button
               scroll={false}
               rightIcon={<ViewIcon />}
@@ -31,7 +31,7 @@ const Resume = () => {
           </Link>{' '}
           <Button
             as="a"
-            href="/ms_resume.pdf"
+            href="/ms_resume.docx.pdf"
             download
             ml={3}
             scroll={false}
@@ -56,7 +56,7 @@ const Resume = () => {
             overflowY="scroll"
           >
             <iframe
-              src="/ms_resume.pdf"
+              src="/ms_resume.docx.pdf"
               title="Resume"
               width="100%"
               height="100%"
