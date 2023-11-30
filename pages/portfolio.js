@@ -21,7 +21,7 @@ const Portfolio = () => {
           <Section>
             <WorkGridItem
               id="nole-patrol"
-              title="Nole Patrol (Not Available Yet)"
+              title="Nole Patrol"
               thumbnail={thumbNolePatrol}
             >
               Data breach search engine for FSU emails
