@@ -78,12 +78,17 @@ const Home = () => (
         </Heading>
         <Paragraph mb={6}>
           Hello! I&apos;m Michael Sousa, a creator dedicated to crafting
-          unique digital experiences. I've always wanted to create new things,
-          unique experiences, getting into web development changed a lot of things for me, and since then,
-          I try to push my work to new horizons with each project, always learning and putting quality first.
+          unique digital experiences. I&apos;ve always wanted to create new things,
+          web development provided me with a platform to express and highlight my enthusiasm for art and design,
+          and since then,
+          I try to push my work to new horizons with each project,
+          always learning and putting quality first.
         </Paragraph>
         <BioSection>
           <BioYear>2000</BioYear>Born in Miami, FL
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>Printed &quot;Hello World!&quot; for the first time.
         </BioSection>
         <BioSection>
           <BioYear>2024</BioYear>Graduate from Florida State University
