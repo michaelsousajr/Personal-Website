@@ -77,10 +77,10 @@ const Home = () => (
           About Me
         </Heading>
         <Paragraph mb={6}>
-          Hello! I&apos;m Michael Sousa, a passionate creator dedicated to crafting
-          unique digital experiences. My journey into the world of technology
-          began at Florida State University, where I was fascinated by the
-          endless possibilities of coding and design.
+          Hello! I&apos;m Michael Sousa, a creator dedicated to crafting
+          unique digital experiences. I've always wanted to create new things,
+          unique experiences, getting into web development changed a lot of things for me, and since then,
+          I try to push my work to new horizons with each project, always learning and putting quality first.
         </Paragraph>
         <BioSection>
           <BioYear>2000</BioYear>Born in Miami, FL
