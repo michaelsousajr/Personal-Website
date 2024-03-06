@@ -69,7 +69,7 @@ const Portfolio = () => {
 
           <Section delay={0.5}>
             <WorkGridItem
-              id="SatTracker"
+              id="sattracker"
               title="SatTracker"
               thumbnail={thumbSatTracker}
             >
