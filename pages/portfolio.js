@@ -67,6 +67,16 @@ const Portfolio = () => {
             </WorkGridItem>
           </Section>
 
+          <Section delay={0.5}>
+            <WorkGridItem
+              id="SatTracker"
+              title="SatTracker"
+              thumbnail={thumbSatTracker}
+            >
+              Real time satellite tracker
+            </WorkGridItem>
+          </Section>
+
         </SimpleGrid>
       </Container>
     </Layout>

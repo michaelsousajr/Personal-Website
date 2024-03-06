@@ -31,7 +31,7 @@ const Resume = () => {
           </Link>{' '}
           <Button
             as="a"
-            href="/ms_resume.docx.pdf"
+            href="/ms_swe_resume.docx.pdf"
             download
             ml={3}
             scroll={false}
