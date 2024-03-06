@@ -8,7 +8,6 @@ import thumbLinkPage from '../public/images/linkpage.png'
 import thumbNolePatrol from '../public/images/np.png'
 import thumbFileOperator from '../public/images/fileoperator.png'
 import thumbPyParty from '../public/images/pypv_ss.png'
-import thumbSatTracker from '../public/images/sattracker.png'
 
 const Portfolio = () => {
   return (
@@ -55,16 +54,6 @@ const Portfolio = () => {
               thumbnail={thumbFileOperator}
             >
               Python file operations package
-            </WorkGridItem>
-          </Section>
-
-          <Section delay={0.4}>
-            <WorkGridItem
-              id="PyPartyVisuals"
-              title="PyPartyVisuals"
-              thumbnail={thumbPyParty}
-            >
-              BPM synced party visuals
             </WorkGridItem>
           </Section>
 
