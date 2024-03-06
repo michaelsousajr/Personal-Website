@@ -76,6 +76,7 @@ const Portfolio = () => {
             >
               BPM synced party visuals
             </WorkGridItem>
+          </Section>
 
         </SimpleGrid>
       </Container>
