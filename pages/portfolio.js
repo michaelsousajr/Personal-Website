@@ -8,6 +8,7 @@ import thumbLinkPage from '../public/images/linkpage.png'
 import thumbNolePatrol from '../public/images/np.png'
 import thumbFileOperator from '../public/images/fileoperator.png'
 import thumbPyParty from '../public/images/pypv_ss.png'
+import thumbSatTracker from '../public/images/sattracker.png'
 
 const Portfolio = () => {
   return (
@@ -69,7 +70,7 @@ const Portfolio = () => {
 
           <Section delay={0.5}>
             <WorkGridItem
-              id="sattracker"
+              id="SatTracker"
               title="SatTracker"
               thumbnail={thumbSatTracker}
             >
