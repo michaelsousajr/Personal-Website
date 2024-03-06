@@ -68,15 +68,14 @@ const Portfolio = () => {
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.5}>
+          <Section delay={0.4}>
             <WorkGridItem
-              id="SatTracker"
-              title="SatTracker"
-              thumbnail={thumbSatTracker}
+              id="PyPartyVisuals"
+              title="PyPartyVisuals"
+              thumbnail={thumbPyParty}
             >
-              Real time satellite tracker
+              BPM synced party visuals
             </WorkGridItem>
-          </Section>
 
         </SimpleGrid>
       </Container>
