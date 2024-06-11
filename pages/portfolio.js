@@ -57,16 +57,6 @@ const Portfolio = () => {
             </WorkGridItem>
           </Section>
 
-          <Section delay={0.4}>
-            <WorkGridItem
-              id="PyPartyVisuals"
-              title="PyPartyVisuals"
-              thumbnail={thumbPyParty}
-            >
-              BPM synced party visuals
-            </WorkGridItem>
-          </Section>
-
         </SimpleGrid>
       </Container>
     </Layout>
