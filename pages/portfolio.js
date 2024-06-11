@@ -7,7 +7,6 @@ import thumbHappyCat from '../public/images/happycat.png'
 import thumbLinkPage from '../public/images/linkpage.png'
 import thumbNolePatrol from '../public/images/np.png'
 import thumbFileOperator from '../public/images/fileoperator.png'
-import thumbPyParty from '../public/images/pypv_ss.png'
 
 const Portfolio = () => {
   return (
