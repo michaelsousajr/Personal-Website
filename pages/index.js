@@ -112,7 +112,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music, Film, Weightlifting, Yoga, Mechanical-Keyboards, and
+          Music, Film, Weightlifting, Yoga, Mech-Keyboards, and
           Coffee.
         </Paragraph>
       </Section>
