@@ -54,17 +54,17 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
+            w="80px"
             h="100px"
             display="inline-block"
-            borderRadius="full"
+            borderRadius="md"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/me_pfp.jpeg"
+              src="/images/headshot.png"
               alt="Profile image"
-              borderRadius="full"
-              width="100"
+              borderRadius="md"
+              width="80"
               height="100"
             />
           </Box>
@@ -75,13 +75,11 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About Me
         </Heading>
-        <Paragraph mb={6}>
-          Hello! I&apos;m Michael Sousa, a creator dedicated to crafting
-          unique digital experiences. I&apos;ve always wanted to create new things,
-          web development provided me with a platform to express and highlight my enthusiasm for art and design,
-          and since then,
-          I try to push my work to new horizons with each project,
-          always learning and putting quality first.
+        <Paragraph mb={6} pb={3}>
+          Hello! I&apos;m Michael Sousa,
+          A passionate indie developer crafting innovative software solutions. Skilled in full-stack development, UI/UX design, and SEO optimization.
+          Committed to creating user-centric applications that solve real-world problems.
+          Always eager to learn new technologies and create unique user experiences.
         </Paragraph>
         <BioSection>
           <BioYear>2000</BioYear>Born in Miami, FL
@@ -90,7 +88,7 @@ const Home = () => (
           <BioYear>2020</BioYear>Printed &quot;Hello World!&quot; for the first time.
         </BioSection>
         <BioSection>
-          <BioYear>2024</BioYear>Graduate from Florida State University
+          <BioYear>2024</BioYear>Graduated from Florida State University
         </BioSection>
 
         <Box align="center" my={4}>
