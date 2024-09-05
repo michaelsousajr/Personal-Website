@@ -7,6 +7,7 @@ import thumbHappyCat from '../public/images/happycat.png'
 import thumbLinkPage from '../public/images/linkpage.png'
 import thumbNolePatrol from '../public/images/np.png'
 import thumbFileOperator from '../public/images/fileoperator.png'
+import thumbCalTracker from '../public/images/cal-tracker.png'
 
 const Portfolio = () => {
   return (
@@ -53,6 +54,16 @@ const Portfolio = () => {
               thumbnail={thumbFileOperator}
             >
               Python file operations package
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.4}>
+            <WorkGridItem
+              id="cal-tracker"
+              title="cal-tracker"
+              thumbnail={thumbCalTracker}
+            >
+              Personal daily calorie tracker
             </WorkGridItem>
           </Section>
 

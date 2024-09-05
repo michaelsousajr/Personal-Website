@@ -77,9 +77,7 @@ const Home = () => (
         </Heading>
         <Paragraph mb={6} pb={3}>
           Hello! I&apos;m Michael Sousa,
-          A passionate indie developer crafting innovative software solutions. Skilled in full-stack development, UI/UX design, and SEO optimization.
-          Committed to creating user-centric applications that solve real-world problems.
-          Always eager to learn new technologies and create unique user experiences.
+          A passionate indie developer dedicated to crafting unique digital experiences.
         </Paragraph>
         <BioSection>
           <BioYear>2000</BioYear>Born in Miami, FL
