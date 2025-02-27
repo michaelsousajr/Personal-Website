@@ -18,7 +18,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
 import ContactMe from '../components/contactme'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -125,20 +125,6 @@ const Home = () => (
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
                 Github
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link
-              href="https://www.linkedin.com/in/michael-sousa-02376a225/"
-              target="_blank"
-            >
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoLinkedin} />}
-              >
-                Linkedin
               </Button>
             </Link>
           </ListItem>
